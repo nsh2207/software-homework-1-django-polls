@@ -1,14 +1,9 @@
 language: python
 python:
-- '3.8'
 - '3.9'
-- '3.10'
-- '3.11'
-- '3.12'
 install:
 - pip install -r requirements.txt
-script:
-- pytest
+
 deploy:
   provider: elasticbeanstalk
   access_key_id:
@@ -16,6 +11,6 @@ deploy:
   secret_access_key:
     secure: EQkCSh7eNBDLmXyH+5ssAuBkODf9W3/07Z2NGkUXX5P2JvIVK3WmqV2Qxv0EKTyciEr73WQQpKKp75f0LRh1Ycd6CLRRm+8DPDCYSAVJ9ZG2Oh2u01zo8em3vjr/FZieS+Zxurq2p3Hg42qHGkWptWL24vCrLvDZEoQCpsALyMRzC1zESv08U8PqLgPKuFV9532XVMnGTuqGKmhTPdGJmnOQynZVVK1nQq/dRPN1yJhBhk0cMCulBRGgoOVuxGonEgvaxsFsEwFjJ0chx6eDC/sBpdTltgA/o5VEnqyY3dNTg1+6FJifDFxqFDOVeK2iqQYZehRh4d2Du0OB+XzjXHNIkVK/ULFFXpaYMBK2Y3VJDhXajEEc9/Hhyl9npOA2JztmMapbN0kvP/sVGYNzEEYKsDiFhNK79dzWvo1Wih9ZNQslEj+kIkXrupckmEBHrUx09teflU43WIihhwIht7sSSAVJntkfrwuNRiluopeOGz03WaNmbQiYHCjHExmUnA3CrJ9wpBi2IYclpqiGHPX3PNrKolAzrBrS/fZNqj9mZAo/lAETnQx9buO4HP53XuOHMCltPndqo0eOAM4OJciNfsqhKQpfwBmKq77Pcdjer9syPqQWLcissiXj9hsfQgEXg/rMKgY4X9OwypleJVu0iEUSwXRbUOlpDE95osU=
   region: us-east-2
-  app: example-app-name
-  env: example-app-environment
-  bucket_name: the-target-S3-bucket
+  app: polls-app
+  env: polls-app
+  
