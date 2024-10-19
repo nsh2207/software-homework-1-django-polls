@@ -3,7 +3,10 @@ python:
 - '3.9'
 install:
 - pip install -r requirements.txt
-
+script:
+- black --check .
+- flake8 --max-line-length=150 .
+- coverage run manage.py test
 deploy:
   provider: elasticbeanstalk
   access_key_id:
