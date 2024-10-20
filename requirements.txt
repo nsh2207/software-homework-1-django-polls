@@ -22,5 +22,5 @@ pytz==2024.2
 requests==2.32.3
 setuptools==75.1.0
 sqlparse==0.5.1
-urllib3==2.2.3
+urllib3==1.26.15
 zope.interface==7.0.3
