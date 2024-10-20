@@ -26,5 +26,9 @@ deploy:
   region: us-east-2
   app: polls-app
   env: polls-app
+  on:
+    repo: nsh2207/software-homework-1-django-polls
+    branch: main
+  skip_cleanup: 'true'
   
 
