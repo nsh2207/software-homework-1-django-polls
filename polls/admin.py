@@ -10,10 +10,10 @@ class ChoiceInline(admin.StackedInline):
 
 class QuestionAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None,               {'fields': ['question_text']}),
-        ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
+        (None, {"fields": ["question_text"]}),
+        ("Date information", {"fields": ["pub_date"], "classes": ["collapse"]}),
     ]
-    list_display = ('question_text', 'pub_date', 'was_published_recently')
+    list_display = ("question_text", "pub_date", "was_published_recently")
 
     inlines = [ChoiceInline]
 
