@@ -68,7 +68,6 @@ TEMPLATES = [
     },
 ]
 
-COVERALLS_REPO_TOKEN = 'FanY1ifBAgLZ0OI20M7Usr3SAZpPNM4D5'
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
