@@ -26,6 +26,7 @@ deploy:
   region: us-east-2
   app: polls-app
   env: polls-app
+  bucket_name: elasticbeanstalk-us-east-2-682033502272
   on:
     repo: nsh2207/software-homework-1-django-polls
     branch: main
