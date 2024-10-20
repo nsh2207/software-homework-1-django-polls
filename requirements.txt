@@ -19,8 +19,9 @@ platformdirs==4.3.6
 pycodestyle==2.12.1
 pyflakes==3.2.0
 pytz==2024.2
+PyYAML==6.0.2
 requests==2.32.3
 setuptools==75.1.0
 sqlparse==0.5.1
-urllib3==1.26.15
+urllib3==2.2.3
 zope.interface==7.0.3
